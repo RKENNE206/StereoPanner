@@ -29,3 +29,16 @@ StereoPanner/JuceLibraryCode/juce_gui_basics.cpp
 StereoPanner/JuceLibraryCode/juce_gui_extra.cpp
 StereoPanner/JuceLibraryCode/juce_opengl.cpp
 StereoPanner/JuceLibraryCode/juce_video.cpp
+*.suo
+*.obj
+*.res
+*.exp
+*.ilk
+*.lib
+*.log
+*.pdb
+*.tlog
+*.dll
+*.idb
+StereoPanner/Builds/VisualStudio2015/StereoPanner.VC.db
+StereoPanner/Builds/VisualStudio2015/StereoPanner.VC.VC.opendb
