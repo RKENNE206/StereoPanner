@@ -36,7 +36,8 @@
                                                                     //[/Comments]
 */
 class StereoPannerAudioProcessorEditor  : public AudioProcessorEditor,
-                                          public Timer
+                                          public Timer,
+                                          public SliderListener
 {
 public:
     //==============================================================================
@@ -50,15 +51,17 @@ public:
 
     void paint (Graphics& g) override;
     void resized() override;
+    void sliderValueChanged (Slider* sliderThatWasMoved) override;
 
 
 
 private:
     //[UserVariables]   -- You can add your own custom variables in this section.
 	StereoPannerAudioProcessor& processor;
-   //[/UserVariables]
+    //[/UserVariables]
 
     //==============================================================================
+    ScopedPointer<Slider> sliderPanPosition;
 
 
     //==============================================================================
